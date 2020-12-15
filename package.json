@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/carryegaulin31/react-calculator/issues"
   },
-  "homepage": "https://github.com/carryegaulin31/react-calculator#readme"
+  "homepage": "https://github.com/carryegaulin31/react-calculator#readme",
+  "dependencies": {
+    "react": "^17.0.1"
+  }
 }
