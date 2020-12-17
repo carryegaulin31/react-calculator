@@ -6,6 +6,19 @@
 
 .title {
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 900;
   margin-bottom: 20px;
 }
+
+input {
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 5px;
+  outline: none;
+}
+
+/*.slug {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 20px;
+} */

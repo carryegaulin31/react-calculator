@@ -1,6 +1,6 @@
 import React from 'react'
 import { render } from 'react-dom'
-import calculator from 'components/calculator'
+import Calculator from './components/calculator'
 
-render(<calculator />,
+render(<Calculator />,
   document.getElementById('root'))
