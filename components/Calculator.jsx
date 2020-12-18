@@ -10,6 +10,20 @@ export default () => {
   const updateAnswer = () => {
     if (Number.isNaN(num1) || Number.isNaN(num2)) {
       setWarning('Please provide a valid number for both operands')
+    } else {
+      if (operation === '+') {
+        setAnswer(Number(num1) + Number(num2))
+        console.log(answer)
+      } else if (operation === '-') {
+        setAnswer(Number(num1) - Number(num2))
+      } else if (operation === '*') {
+        setAnswer(Number(num1) * Number(num2))
+      } else if (operation === '/') {
+        setAnswer(Number(num1) / Number(num2))
+      }
+    }
+  }
+
 
       return (
         <div className="page">
