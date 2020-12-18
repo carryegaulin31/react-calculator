@@ -7,23 +7,26 @@ export default () => {
   const [answer, setAnswer] = useState('')
   const [warning, setWarning] = useState('')
   const updateAnswer = () => {
-    if (Number.isNaN(num1) || Number.isNaN(num2)) {
+    if (Number(num1) && Number(num2)) {
+      if (warning) setWarning('')
+      switch (operation) {
+        case '+':
+          setAnswer(Number(num1) + Number(num2))
+          break
+        case '-':
+          setAnswer(Number(num1) - Number(num2))
+          break
+        case '*':
+          setAnswer(Number(num1) * Number(num2))
+          break
+        case '/':
+          setAnswer(Number(num1) / Number(num2))
+          break
+        default:
+      }
+    } else {
+      setAnswer('')
       setWarning('Please provide a valid number for both operands')
-    }
-    switch (operation) {
-      case '+':
-        setAnswer(Number(num1) + Number(num2))
-        break
-      case '-':
-        setAnswer(Number(num1) - Number(num2))
-        break
-      case '*':
-        setAnswer(Number(num1) * Number(num2))
-        break
-      case '/':
-        setAnswer(Number(num1) / Number(num2))
-        break
-      default:
     }
   }
 
@@ -40,6 +43,7 @@ export default () => {
       <input id="number2" type="text" name="number2" onChange={event => setNum2(event.target.value)} />
       <input type="button" value="=" onClick={updateAnswer} />
       <input id="answer" type="text" name="answer" defaultValue={answer} disabled />
+      <div className="manu">{warning ? `${warning}` : null}</div>
     </div>
   )
 }
