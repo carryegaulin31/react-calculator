@@ -1,5 +1,5 @@
 .page {
-  margin: 60px auto 0;
+  margin: 40px auto 0;
   text-align: center;
   width: 60%;
 }
@@ -10,11 +10,18 @@
   margin-bottom: 20px;
 }
 
-input {
+input number1 {
   border-radius: 8px;
   font-size: 16px;
   padding: 5px;
   outline: none;
+}
+
+input number2 {
+  border-radius: 8px;
+  font-size: 16px;
+
+
 }
 
 /*.slug {
