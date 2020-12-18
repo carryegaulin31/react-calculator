@@ -1,22 +1,42 @@
 .page {
-  margin: 40px auto 0;
-  text-align: center;
-  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+body {
+  background-color: darkCyan;
 }
 
 .title {
-  font-size: 24px;
-  font-weight: 900;
-  margin-bottom: 20px;
+  font-size: 3em;
+  font-family:cursive;
+  text-align: center;
 }
 
-input {
-  
+.number1, .number2, .answer {
+  background-color:lemonchiffon; 
 }
 
+.operation, .click {
+  background-color: thistle;
+}
+
+.number1, .number2, .answer, .operation, .click {
+  display: inline;
+  margin: .3em;
+  padding: .60em;
+  border-radius: .3em;
+}
+
+.number1, .number2, .answer {
+  width: 3 em;
+}
 
 .warning {
-  font-size: 24px;
-  font-weight: 500;
-  margin-bottom: 20px;
-} 
+  font-size: 1.5em; 
+  font-family: cursive;
+  color: lightcoral;
+  text-align: center;
+}

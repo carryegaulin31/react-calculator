@@ -33,17 +33,17 @@ export default () => {
   return (
     <div className="page">
       <div className="title">React Calculator</div>
-      <input cleassName="number1" type="text" name="number1" onChange={event => setNum1(event.target.value)} />
-      <select id="operation" name="operation" onChange={event => setOperation(event.target.value)}>
+      <input className="number1" type="text" name="number1" onChange={event => setNum1(event.target.value)} />
+      <select className="operation" name="operation" onChange={event => setOperation(event.target.value)}>
         <option value="+">+</option>
         <option value="-">-</option>
         <option value="*">*</option>
         <option value="/">/</option>
       </select>
       <input className="number2" type="text" name="number2" onChange={event => setNum2(event.target.value)} />
-      <input type="button" value="=" onClick={updateAnswer} />
+      <input className="click" type="button" value="=" onClick={updateAnswer} />
       <input className="answer" type="text" name="answer" defaultValue={answer} disabled />
-      <div className="manu">{warning ? `${warning}` : null}</div>
+      <div className="warning">{warning ? `${warning}` : null}</div>
     </div>
   )
 }
